@@ -31,8 +31,8 @@ int main(){
 Mặc dù các chương trình này dễ sửa (loại bỏ định nghĩa trùng lặp), nhưng với các file header, khá dễ dẫn đến tình huống một định nghĩa trong file header được đưa vào nhiều lần. Điều này có thể xảy ra khi file header #include file header khác (điều này thường xảy ra). Vì vậy cơ chế ***include guard*** được đưa vào nhằm giải quyết vấn đề xung đột định nghĩa giữa các file header khi chương trình khởi chạy với chúng.
 
 ```c
-#ifndef <token>
-#define <token>
+#ifndef TOKEN
+#define TOKEN
 
 // definition
 
